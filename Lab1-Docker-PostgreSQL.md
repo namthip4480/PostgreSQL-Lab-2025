@@ -79,10 +79,10 @@ docker run hello-world
 ```
 
 **บันทึกผลการทดลอง - การเตรียมความพร้อม:**
-```
+
 <img width="592" height="432" alt="image" src="https://github.com/user-attachments/assets/783ced38-fb15-4c19-aa34-2b50a9e4234f" />
 
-```
+
 
 ## ขั้นตอนการทดลอง
 
@@ -104,10 +104,10 @@ docker inspect postgres
 
 
 **บันทึกผลการทดลอง - Step 1:**
-```
+
 <img width="539" height="138" alt="image" src="https://github.com/user-attachments/assets/170d7ab7-ebbb-4bfa-8c19-6ed487174622" />
 
-```
+
 
 ### Step 2: Create Docker Volume for Data Persistence
 
@@ -128,10 +128,10 @@ docker volume create postgres-config
 **คำอธิบาย**: Docker Volume จะทำให้ข้อมูลคงอยู่แม้ Container จะถูกลบ
 
 **บันทึกผลการทดลอง - Step 2:**
-```
+
 <img width="519" height="289" alt="image" src="https://github.com/user-attachments/assets/2c9403d5-a0f4-4132-bbdd-4e8edeac7e07" />
 
-```
+
 
 ### Step 3: Create PostgreSQL Container with Volume
 
@@ -152,10 +152,10 @@ docker volume create postgres-config
 - `-c shared_buffers=256MB`: กำหนด shared buffers
 
 **บันทึกผลการทดลอง - Step 3:**
-```
+
 <img width="708" height="161" alt="image" src="https://github.com/user-attachments/assets/89127d3a-2969-4ee6-a241-a612b98da70c" />
 
-```
+
 
 ### Step 4: Verify Container Status and Resource Usage
 
@@ -174,14 +174,14 @@ docker volume inspect postgres-data
 ```
 
 **บันทึกผลการทดลอง - Step 4:**
-```
+
 <img width="837" height="131" alt="image" src="https://github.com/user-attachments/assets/5fedddad-3f5e-4126-bd52-87ff6a2e85ed" />
 
 <img width="1800" height="580" alt="image" src="https://github.com/user-attachments/assets/b7484ab5-fedc-4783-b5a8-b31b6c97ca94" />
 
 <img width="763" height="70" alt="image" src="https://github.com/user-attachments/assets/ffa1b867-852d-48bd-8561-25cab2696956" />
 
-```
+
 
 ### Step 5: Connect to PostgreSQL และตรวจสอบ Configuration
 
